@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trutest Diagnostics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a6a99",
+                        "primary-hover": "#085780",
+                        "primary-light": "#e6f0f5",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "text-main": "#0d171c",
+                        "text-muted": "#4b809b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light text-text-main font-display antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 bg-white/90 backdrop-blur-md px-10 py-4 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[28px]">medical_services</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight text-text-main">Trutest Diagnostics</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden items-center gap-8 lg:flex">
+<a class="text-sm font-semibold text-text-main hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Tests</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Packages</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex gap-3">
+<button class="flex h-10 cursor-pointer items-center justify-center rounded-lg bg-slate-100 px-4 text-sm font-bold text-slate-700 hover:bg-slate-200 transition-colors">
+<span class="material-symbols-outlined mr-2 text-[18px]">location_on</span>
+<span>New York</span>
+</button>
+<button class="flex h-10 cursor-pointer items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white shadow-md shadow-primary/20 hover:bg-primary-hover transition-colors">
+<span>Login</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex flex-col">
+<!-- Hero Section -->
+<section class="relative mx-auto w-full max-w-[1440px] px-4 py-6 md:px-10">
+<div class="relative overflow-hidden rounded-3xl bg-slate-900 text-white shadow-xl">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0 h-full w-full bg-cover bg-center opacity-60 mix-blend-overlay" data-alt="Abstract blue medical laboratory background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBH-Qb6TT9wGTbbLaNa2vGJDX_Cg3EO5gGkbAHD-3ucjIwIDf5ayscenW4JmL6ZAxfQW4a695Li2UHKSdAeqRuJlzoUx0kGAKDXTBgaI4zVBi1gY0nSdeYyy91eR-5F25tiZPbARPjb72Y1pXv5XqAgTCwiZMunuzv3e_wwwlPLuJA9Fx8p7-z4W5esmmrr4gOe9qdkMH7qX6rq80QWmWNy0AShJCRkiwnFLKAKChe_oXVLlIABBo8iteXm1xNx2-ZLmfLyE2N81taN");'>
+</div>
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-primary/90 to-slate-900/80"></div>
+<div class="relative z-10 flex min-h-[520px] flex-col items-center justify-center px-6 py-20 text-center">
+<span class="mb-4 inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white backdrop-blur-sm">
+                            Trusted by 10,000+ Patients
+                        </span>
+<h1 class="mb-6 max-w-4xl text-4xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+                            Advanced Diagnostics <br class="hidden md:block"/> You Can Trust completely.
+                        </h1>
+<p class="mb-10 max-w-2xl text-lg font-medium text-slate-100/90 md:text-xl">
+                            Book blood tests, full body checkups, and upload prescriptions online. Get accurate reports delivered to your app within 24 hours.
+                        </p>
+<!-- Search Bar -->
+<div class="mb-10 w-full max-w-2xl">
+<label class="relative flex w-full items-center">
+<span class="absolute left-4 flex items-center text-slate-400">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</span>
+<input class="h-14 w-full rounded-2xl border-none bg-white pl-12 pr-4 text-lg font-medium text-slate-900 shadow-lg placeholder:text-slate-400 focus:ring-4 focus:ring-primary/30" placeholder="Search for tests (e.g., CBC, Thyroid, Vitamin D)" type="text"/>
+<button class="absolute right-2 top-2 bottom-2 rounded-xl bg-primary px-6 text-sm font-bold text-white hover:bg-primary-hover">
+                                    Search
+                                </button>
+</label>
+</div>
+<!-- Hero CTAs -->
+<div class="flex flex-wrap justify-center gap-4">
+<button class="flex h-12 items-center justify-center rounded-xl bg-white px-8 text-base font-bold text-primary shadow-lg transition-transform hover:-translate-y-0.5 hover:shadow-xl">
+<span class="material-symbols-outlined mr-2">medical_information</span>
+                                Book Health Package
+                            </button>
+<button class="flex h-12 items-center justify-center rounded-xl bg-white/10 px-8 text-base font-bold text-white backdrop-blur-md transition-colors hover:bg-white/20 border border-white/20">
+<span class="material-symbols-outlined mr-2">upload_file</span>
+                                Upload Prescription
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-16 px-6 md:px-20 bg-white">
+<div class="mx-auto max-w-6xl">
+<div class="mb-12 text-center">
+<h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">How It Works</h2>
+<p class="mt-4 text-lg text-slate-600">Get tested in 4 simple steps from the comfort of your home.</p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+<!-- Step 1 -->
+<div class="relative flex flex-col items-center text-center group">
+<div class="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-light text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined text-[40px]">search</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900">1. Book Test</h3>
+<p class="text-sm text-slate-600">Select your test or health package and book a slot via website or app.</p>
+<!-- Connector Line (Desktop) -->
+<div class="hidden lg:block absolute top-10 left-[60%] w-[80%] h-[2px] bg-slate-100 -z-10"></div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col items-center text-center group">
+<div class="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-light text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined text-[40px]">home_health</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900">2. Home Collection</h3>
+<p class="text-sm text-slate-600">Our certified phlebotomist will visit your home to collect the sample.</p>
+<!-- Connector Line (Desktop) -->
+<div class="hidden lg:block absolute top-10 left-[60%] w-[80%] h-[2px] bg-slate-100 -z-10"></div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col items-center text-center group">
+<div class="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-light text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined text-[40px]">science</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900">3. Lab Processing</h3>
+<p class="text-sm text-slate-600">Samples are processed in our NABL accredited state-of-the-art labs.</p>
+<!-- Connector Line (Desktop) -->
+<div class="hidden lg:block absolute top-10 left-[60%] w-[80%] h-[2px] bg-slate-100 -z-10"></div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col items-center text-center group">
+<div class="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-primary-light text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined text-[40px]">description</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900">4. Digital Report</h3>
+<p class="text-sm text-slate-600">Receive accurate digital reports via email and app within 24 hours.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Packages Grid -->
+<section class="bg-background-light py-16 px-4 md:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="mb-10 flex items-end justify-between">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-slate-900">Popular Health Packages</h2>
+<p class="mt-2 text-slate-600">Curated packages for comprehensive health monitoring.</p>
+</div>
+<a class="hidden text-sm font-bold text-primary hover:text-primary-hover sm:flex items-center" href="#">
+                            View all packages <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<!-- Card 1 -->
+<div class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+<div class="mb-4 flex items-start justify-between">
+<div class="rounded-lg bg-green-100 px-3 py-1 text-xs font-bold uppercase text-green-700">Save 20%</div>
+<button class="text-slate-400 hover:text-red-500">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<h3 class="text-lg font-bold text-slate-900">Basic Health Check</h3>
+<p class="mt-1 text-sm text-slate-500">Ideal for annual screening.</p>
+<div class="my-4 border-t border-slate-100 pt-4">
+<ul class="space-y-3">
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Complete Blood Count</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Lipid Profile</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Blood Sugar Fasting</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-4">
+<div class="mb-4 flex items-baseline">
+<span class="text-2xl font-black text-slate-900">$49</span>
+<span class="ml-2 text-sm text-slate-400 line-through">$62</span>
+</div>
+<button class="w-full rounded-xl bg-primary py-3 text-sm font-bold text-white shadow-md shadow-primary/20 hover:bg-primary-hover transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col rounded-2xl border border-primary/20 bg-white p-6 shadow-md ring-1 ring-primary/10">
+<div class="mb-4 flex items-start justify-between">
+<div class="rounded-lg bg-primary px-3 py-1 text-xs font-bold uppercase text-white">Best Value</div>
+<button class="text-slate-400 hover:text-red-500">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<h3 class="text-lg font-bold text-slate-900">Comprehensive Body Profile</h3>
+<p class="mt-1 text-sm text-slate-500">Full body analysis including vital organs.</p>
+<div class="my-4 border-t border-slate-100 pt-4">
+<ul class="space-y-3">
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Liver Function Test</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Kidney Function Test</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Thyroid Profile</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Urine Analysis</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-4">
+<div class="mb-4 flex items-baseline">
+<span class="text-2xl font-black text-slate-900">$99</span>
+<span class="ml-2 text-sm text-slate-400 line-through">$140</span>
+</div>
+<button class="w-full rounded-xl bg-primary py-3 text-sm font-bold text-white shadow-md shadow-primary/20 hover:bg-primary-hover transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+<div class="mb-4 flex items-start justify-between">
+<div class="rounded-lg bg-green-100 px-3 py-1 text-xs font-bold uppercase text-green-700">Save 15%</div>
+<button class="text-slate-400 hover:text-red-500">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<h3 class="text-lg font-bold text-slate-900">Premium Wellness</h3>
+<p class="mt-1 text-sm text-slate-500">Includes advanced cardiac markers.</p>
+<div class="my-4 border-t border-slate-100 pt-4">
+<ul class="space-y-3">
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Vitamin D &amp; B12</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Iron Studies</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Cardiac Risk Markers</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-4">
+<div class="mb-4 flex items-baseline">
+<span class="text-2xl font-black text-slate-900">$199</span>
+<span class="ml-2 text-sm text-slate-400 line-through">$235</span>
+</div>
+<button class="w-full rounded-xl bg-primary py-3 text-sm font-bold text-white shadow-md shadow-primary/20 hover:bg-primary-hover transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+<div class="mb-4 flex items-start justify-between">
+<div class="rounded-lg bg-green-100 px-3 py-1 text-xs font-bold uppercase text-green-700">Save 10%</div>
+<button class="text-slate-400 hover:text-red-500">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<h3 class="text-lg font-bold text-slate-900">Senior Citizen Care</h3>
+<p class="mt-1 text-sm text-slate-500">Tailored for ages 60+.</p>
+<div class="my-4 border-t border-slate-100 pt-4">
+<ul class="space-y-3">
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Bone Health Profile</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Diabetes Screening</span>
+</li>
+<li class="flex items-start text-sm text-slate-700">
+<span class="material-symbols-outlined mr-2 text-[20px] text-green-600">check_circle</span>
+<span>Electrolytes</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-4">
+<div class="mb-4 flex items-baseline">
+<span class="text-2xl font-black text-slate-900">$129</span>
+<span class="ml-2 text-sm text-slate-400 line-through">$145</span>
+</div>
+<button class="w-full rounded-xl bg-primary py-3 text-sm font-bold text-white shadow-md shadow-primary/20 hover:bg-primary-hover transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-center sm:hidden">
+<button class="flex items-center rounded-lg border border-slate-300 bg-white px-6 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50">
+                            View all packages <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-20 bg-white">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="mx-auto max-w-2xl text-center">
+<h2 class="text-base font-semibold leading-7 text-primary">Our Promise</h2>
+<p class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Why Choose Trutest Diagnostics?</p>
+<p class="mt-6 text-lg leading-8 text-slate-600">We combine advanced technology with expert care to deliver diagnostic services you can rely on.</p>
+</div>
+<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+<dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+<div class="flex flex-col">
+<dt class="flex items-center gap-x-3 text-base font-bold leading-7 text-slate-900">
+<div class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">verified</span>
+</div>
+                                    NABL Accredited Labs
+                                </dt>
+<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+<p class="flex-auto">Our laboratories adhere to the highest international quality standards, ensuring 100% accurate results every time.</p>
+</dd>
+</div>
+<div class="flex flex-col">
+<dt class="flex items-center gap-x-3 text-base font-bold leading-7 text-slate-900">
+<div class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+                                    Latest Technology
+                                </dt>
+<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+<p class="flex-auto">We use fully automated analyzers and AI-assisted reporting tools to minimize human error and speed up processing.</p>
+</dd>
+</div>
+<div class="flex flex-col">
+<dt class="flex items-center gap-x-3 text-base font-bold leading-7 text-slate-900">
+<div class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+                                    Timely Reports
+                                </dt>
+<dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+<p class="flex-auto">Get your reports delivered digitally within 24 hours for most routine tests, so you can consult your doctor sooner.</p>
+</dd>
+</div>
+</dl>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-slate-900 py-16">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2 lg:items-center">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Download the Trutest App</h2>
+<p class="mt-6 text-lg leading-8 text-slate-300">Track your health trends, book tests on the go, and access your family's medical records securely in one place.</p>
+<div class="mt-8 flex gap-4">
+<button class="flex items-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-slate-900 hover:bg-slate-100">
+<span class="material-symbols-outlined mr-2">ios</span>
+                                    App Store
+                                </button>
+<button class="flex items-center rounded-xl bg-transparent border border-slate-600 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800">
+<span class="material-symbols-outlined mr-2">android</span>
+                                    Play Store
+                                </button>
+</div>
+</div>
+<div class="relative h-64 overflow-hidden rounded-2xl md:h-80 lg:h-96">
+<div class="absolute inset-0 h-full w-full bg-cover bg-center" data-alt="Modern smartphone showing health analytics app interface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgIDPe7Ohix0_GJL7g-9-yIWyWKUMEc_K5i0hupa_tNIhEb1CGXUdS8GPfXitqz3qwUx_eZMN4PnDIzMtOV5Z0XokwtLmHaFMxPQfHcXAiZLyE5fBb02LdbYISItZXGs1WBaOTPB9gqgSSDhN4Om1HqIZ-bWIbIUmnSZ24pRfskOQHeCC7tvTYnVSsswZwSMAMJdFXjstrgF8hUlYUzHUxcZ48VE11LKI6gR9CRoR3Yhx5t0zNJ9Qy5NOVCCbqSMBxAmM0ngxMfGx-");'></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-4">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900">Trutest</h3>
+</div>
+<p class="text-sm leading-6 text-slate-600">Empowering better health through precision diagnostics and accessible care.</p>
+</div>
+<div>
+<h3 class="text-sm font-semibold leading-6 text-slate-900">Services</h3>
+<ul class="mt-6 space-y-4 text-sm leading-6 text-slate-600">
+<li><a class="hover:text-primary" href="#">Pathology Tests</a></li>
+<li><a class="hover:text-primary" href="#">Radiology</a></li>
+<li><a class="hover:text-primary" href="#">Corporate Wellness</a></li>
+<li><a class="hover:text-primary" href="#">Covid-19 Testing</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-semibold leading-6 text-slate-900">Company</h3>
+<ul class="mt-6 space-y-4 text-sm leading-6 text-slate-600">
+<li><a class="hover:text-primary" href="#">About Us</a></li>
+<li><a class="hover:text-primary" href="#">Careers</a></li>
+<li><a class="hover:text-primary" href="#">Blog</a></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-semibold leading-6 text-slate-900">Support</h3>
+<ul class="mt-6 space-y-4 text-sm leading-6 text-slate-600">
+<li><a class="hover:text-primary" href="#">Help Center</a></li>
+<li><a class="hover:text-primary" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 border-t border-slate-200 pt-8 sm:mt-20 lg:mt-24">
+<p class="text-xs leading-5 text-slate-500">© 2024 Trutest Diagnostics. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

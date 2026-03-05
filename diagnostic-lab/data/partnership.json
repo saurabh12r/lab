@@ -1,0 +1,22 @@
+{
+  "benefits": [
+    { "icon": "groups", "title": "Bulk Testing & Pricing", "description": "Competitive rates for corporate health checkups and employee wellness programs." },
+    { "icon": "health_and_safety", "title": "On-Site Collection", "description": "Our phlebotomists visit your premises for convenient sample collection." },
+    { "icon": "analytics", "title": "Dedicated Dashboard", "description": "Track employee test status, reports, and compliance in one portal." },
+    { "icon": "support_agent", "title": "Account Manager", "description": "A single point of contact for scheduling, reports, and support." }
+  ],
+  "services": [
+    "Annual health checkups",
+    "Pre-employment screening",
+    "Wellness camps",
+    "COVID-19 & flu vaccination drives",
+    "Custom panel design",
+    "Bulk report delivery via API"
+  ],
+  "company": {
+    "name": "Trutest Diagnostics",
+    "tagline": "NABL accredited labs · 50+ cities · 24/7 support",
+    "founded": "2018",
+    "employees": "500+"
+  }
+}

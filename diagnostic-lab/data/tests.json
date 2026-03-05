@@ -1,0 +1,7 @@
+[
+  { "id": "test_001", "name": "Complete Blood Count", "category": "Blood Test", "price": 25, "reportTime": "24 Hours", "preparation": "Fasting not required", "status": "active" },
+  { "id": "test_002", "name": "Thyroid Profile", "category": "Hormone", "price": 35, "reportTime": "24 Hours", "preparation": "Fasting not required", "status": "active" },
+  { "id": "test_003", "name": "Vitamin D Test", "category": "Vitamin", "price": 42, "reportTime": "48 Hours", "preparation": "No special preparation", "status": "active" },
+  { "id": "test_004", "name": "Blood Sugar Test", "category": "Blood Test", "price": 28, "reportTime": "24 Hours", "preparation": "Fasting 8-10 hours required", "status": "active" },
+  { "id": "test_005", "name": "Lipid Profile", "category": "Blood Test", "price": 38, "reportTime": "24 Hours", "preparation": "Fasting 10-12 hours required", "status": "active" }
+]

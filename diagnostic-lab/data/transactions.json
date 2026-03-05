@@ -1,0 +1,6 @@
+[
+  { "id": "TXN-9021", "orderId": "ORD-9021", "customerName": "Jane Smith", "customerEmail": "jane@example.com", "amount": "145.00", "paymentMethod": "Razorpay", "paymentStatus": "Pending", "transactionDate": "Oct 28, 2023", "cancelledNote": "Cancelled 2h ago" },
+  { "id": "TXN-8845", "orderId": "ORD-8845", "customerName": "Robert Chen", "customerEmail": "rob.c@example.com", "amount": "85.50", "paymentMethod": "Stripe", "paymentStatus": "Refunded", "transactionDate": "Oct 27, 2023", "cancelledNote": "Cancelled 1d ago" },
+  { "id": "TXN-8712", "orderId": "ORD-8712", "customerName": "Sarah Williams", "customerEmail": "sarah.w@example.com", "amount": "210.00", "paymentMethod": "Razorpay", "paymentStatus": "Pending", "transactionDate": "Oct 26, 2023", "cancelledNote": "Cancelled 2d ago" },
+  { "id": "TXN-8690", "orderId": "ORD-8690", "customerName": "Mike Johnson", "customerEmail": "mike@example.com", "amount": "99.00", "paymentMethod": "Razorpay", "paymentStatus": "Paid", "transactionDate": "Oct 25, 2023" }
+]

@@ -1,0 +1,12 @@
+{
+  "support": {
+    "supportPhone": "+1 (555) 012-3456",
+    "whatsAppNumber": "15550123456"
+  },
+  "preferredTimes": [
+    "Immediately",
+    "Morning (9 AM - 12 PM)",
+    "Afternoon (12 PM - 5 PM)",
+    "Evening (5 PM - 8 PM)"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sidebarLinks": [
+    { "href": "/admin", "label": "Dashboard", "icon": "dashboard" },
+    { "href": "/admin/orders", "label": "Orders", "icon": "receipt_long" },
+    { "href": "/admin/packages", "label": "Packages", "icon": "inventory_2" },
+    { "href": "/admin/tests", "label": "Tests", "icon": "science" },
+    { "href": "/admin/prescriptions", "label": "Prescriptions", "icon": "description" },
+    { "href": "/admin/users", "label": "Users", "icon": "people" },
+    { "href": "/admin/feedback", "label": "Feedback", "icon": "rate_review" },
+    { "href": "/admin/enquiries", "label": "Enquiries", "icon": "contact_mail" },
+    { "href": "/admin/locations", "label": "Locations", "icon": "location_on" },
+    { "href": "/admin/blog", "label": "Blog Management", "icon": "article" },
+    { "href": "/admin/media", "label": "Media / Banners", "icon": "photo_library" },
+    { "href": "/admin/payments", "label": "Payments", "icon": "payments" },
+    { "href": "/admin/notifications", "label": "Notifications", "icon": "notifications" }
+  ],
+  "kpi": [
+    { "title": "Total Revenue", "value": "$124,500", "icon": "payments", "trend": "+12.5% vs last month", "up": true },
+    { "title": "Total Orders", "value": "1,250", "icon": "receipt_long", "trend": "+5.2% vs last month", "up": true },
+    { "title": "Pending Orders", "value": "45", "icon": "pending_actions", "trend": "-2.1% vs last month", "up": false },
+    { "title": "Total Users", "value": "892", "icon": "diversity_1", "trend": "+8.4% vs last month", "up": true, "href": "/admin/users" },
+    { "title": "Customer Reviews", "value": "1,248", "icon": "rate_review", "trend": "+10% vs last month", "up": true, "href": "/admin/feedback" },
+    { "title": "New Leads", "value": "24", "icon": "contact_mail", "trend": "Enquiries this week", "up": true, "href": "/admin/enquiries" },
+    { "title": "Service Areas", "value": "12", "icon": "location_on", "trend": "Cities & zones", "up": true, "href": "/admin/locations" },
+    { "title": "Content", "value": "24", "icon": "article", "trend": "Blog posts", "up": true, "href": "/admin/blog" },
+    { "title": "Manage Banners", "value": "5", "icon": "photo_library", "trend": "Active banners", "up": true, "href": "/admin/media" },
+    { "title": "Transactions", "value": "12", "icon": "payments", "trend": "Eligible refunds", "up": true, "href": "/admin/payments" },
+    { "title": "Notification Settings", "value": "API", "icon": "notifications", "trend": "SMS, email & push", "up": true, "href": "/admin/notifications" }
+  ],
+  "orderStatus": [
+    { "label": "Done", "pct": 65, "color": "bg-emerald-500" },
+    { "label": "Wait", "pct": 25, "color": "bg-amber-500" },
+    { "label": "Cancel", "pct": 10, "color": "bg-red-500" }
+  ],
+  "topTests": [
+    { "icon": "bloodtype", "name": "CBC Panel", "orders": "450 orders", "revenue": "$12.4k" },
+    { "icon": "coronavirus", "name": "PCR Test", "orders": "320 orders", "revenue": "$8.9k" },
+    { "icon": "ecg_heart", "name": "Lipid Profile", "orders": "210 orders", "revenue": "$5.2k" }
+  ],
+  "recentActivity": [
+    { "time": "Just now", "text": "New order #ORD-2458 created by Dr. Sarah West.", "sub": "Comprehensive Metabolic Panel • Priority: High" },
+    { "time": "45 min ago", "text": "Test results for John Doe are ready.", "actions": ["View Report", "Email Patient"] },
+    { "time": "2 hrs ago", "text": "Sample rejected for Order #ORD-2450.", "sub": "Reason: Insufficient volume" },
+    { "time": "Yesterday", "text": "System maintenance scheduled for weekend." },
+    { "time": "Yesterday", "text": "New patient registration: Alice M.", "actions": ["View"] }
+  ],
+  "systemStatus": [
+    { "label": "Database", "value": "Healthy" },
+    { "label": "API Latency", "value": "24ms" },
+    { "label": "Storage", "value": "70%" }
+  ],
+  "chartMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+  "chartValues": [22, 28, 35, 38, 42, 45, 48]
+}

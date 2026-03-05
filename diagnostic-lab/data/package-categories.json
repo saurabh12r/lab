@@ -1,0 +1,8 @@
+[
+  { "icon": "list_alt", "label": "All Packages", "active": true },
+  { "icon": "accessibility_new", "label": "Full Body Checkups" },
+  { "icon": "monitor_heart", "label": "Diabetes Care" },
+  { "icon": "favorite", "label": "Heart Health" },
+  { "icon": "elderly", "label": "Senior Citizen" },
+  { "icon": "female", "label": "Women's Health" }
+]

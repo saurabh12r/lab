@@ -1,0 +1,8 @@
+{
+  "triggers": [
+    { "id": "booking", "title": "Booking Created", "description": "Send confirmation when a new test booking is confirmed." },
+    { "id": "sample", "title": "Sample Collected", "description": "Notify patient when their sample has been successfully collected." },
+    { "id": "report", "title": "Report Generated", "description": "Alert patient with link/attachment when results are ready." },
+    { "id": "payment", "title": "Payment Reminder", "description": "Send automated reminders for pending invoices." }
+  ]
+}

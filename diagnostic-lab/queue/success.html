@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking Success - TruDiagnostics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0ff05a",
+                        "background-light": "#f5f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<!-- Navbar -->
+<header class="w-full border-b border-primary/20 bg-background-light dark:bg-background-dark/95 backdrop-blur sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">TruDiagnostics</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Locations</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">My Reports</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center justify-center rounded-lg h-9 px-4 bg-primary text-slate-900 text-sm font-bold shadow-sm hover:opacity-90 transition-opacity">
+                    Login
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Content: Success State -->
+<main class="flex-grow flex items-center justify-center py-12 px-4 relative">
+<!-- Subtle Confetti Background Elements (CSS Shapes) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="absolute top-[10%] left-[15%] w-3 h-3 bg-primary/40 rounded-full"></div>
+<div class="absolute top-[20%] right-[10%] w-4 h-4 bg-primary/20 rotate-45 rounded"></div>
+<div class="absolute bottom-[20%] left-[20%] w-2 h-6 bg-primary/30 rotate-12 rounded"></div>
+<div class="absolute top-[15%] left-[40%] w-3 h-3 border-2 border-primary/30 rounded-full"></div>
+<div class="absolute bottom-[30%] right-[25%] w-5 h-5 bg-primary/10 rounded-full"></div>
+<div class="absolute top-[40%] left-[5%] w-2 h-2 bg-primary/50 rounded-full"></div>
+<div class="absolute top-[60%] right-[5%] w-3 h-3 bg-primary/30 rotate-45"></div>
+</div>
+<div class="w-full max-w-[640px] flex flex-col items-center bg-white dark:bg-[#152a1d] rounded-2xl shadow-xl border border-primary/10 p-8 md:p-12 relative z-10">
+<!-- Success Icon -->
+<div class="mb-8 relative">
+<div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-6xl">check_circle</span>
+</div>
+<!-- Decorative Glow -->
+<div class="absolute inset-0 bg-primary/20 blur-xl rounded-full -z-10"></div>
+</div>
+<!-- Header Text -->
+<h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-slate-900 dark:text-white">Booking Confirmed!</h1>
+<p class="text-slate-600 dark:text-slate-300 text-center text-lg mb-8 max-w-md">
+                Your diagnostic test has been successfully scheduled. We have sent a confirmation email to your registered address.
+            </p>
+<!-- Booking Details Card -->
+<div class="w-full bg-background-light dark:bg-background-dark rounded-xl p-6 mb-8 border border-primary/20 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-1 items-center md:items-start border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-700 pb-4 md:pb-0 md:pr-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-xl">receipt_long</span>
+<span class="text-sm font-semibold uppercase tracking-wider">Booking ID</span>
+</div>
+<p class="text-xl font-bold text-slate-900 dark:text-white mt-1">#TRU12345</p>
+</div>
+<div class="flex flex-col gap-1 items-center md:items-start pl-0 md:pl-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-xl">event_available</span>
+<span class="text-sm font-semibold uppercase tracking-wider">Est. Report Date</span>
+</div>
+<p class="text-xl font-bold text-slate-900 dark:text-white mt-1">October 24, 2023</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 h-12 px-6 bg-primary text-slate-900 text-base font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md hover:shadow-lg">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span>View Booking</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-12 px-6 bg-white dark:bg-background-dark border-2 border-primary/20 text-slate-900 dark:text-white text-base font-bold rounded-xl hover:border-primary/50 hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Invoice</span>
+</button>
+</div>
+<button class="w-full flex items-center justify-center gap-2 h-12 px-6 text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors mt-2">
+<span>Go to Dashboard</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Help Link -->
+<div class="mt-8 text-center">
+<p class="text-sm text-slate-500 dark:text-slate-400">
+                    Need help? <a class="text-primary font-medium hover:underline" href="#">Contact Support</a>
+</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-primary/20 bg-background-light dark:bg-background-dark py-10 mt-auto">
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Terms of Service</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm" href="#">Help Center</a>
+</div>
+<p class="text-slate-500 dark:text-slate-500 text-sm">© 2023 TruDiagnostics Labs. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

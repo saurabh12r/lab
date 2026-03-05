@@ -1,0 +1,16 @@
+{
+  "order": {
+    "bookingId": "#TRU-88291",
+    "patientName": "John Doe",
+    "testType": "Full Body Checkup",
+    "estReportDate": "Oct 24, 2023"
+  },
+  "timeline": [
+    { "id": "1", "icon": "check_circle", "title": "Booking Confirmed", "time": "Oct 21, 10:00 AM", "description": "Your appointment has been successfully scheduled.", "status": "done" },
+    { "id": "2", "icon": "local_shipping", "title": "Driver On The Way", "time": "Oct 21, 11:30 AM", "detail": "Mike Ross (Phlebotomist)", "subDetail": "+1 (555) 000-0000", "status": "done" },
+    { "id": "3", "icon": "biotech", "title": "Sample Collected", "time": null, "label": "In Progress", "description": "The phlebotomist is collecting your sample or it is en route to the lab.", "status": "in_progress" },
+    { "id": "4", "icon": "science", "title": "Sample Processed", "time": null, "label": "Pending", "status": "pending" },
+    { "id": "5", "icon": "description", "title": "Report Generated", "time": null, "label": "Pending", "status": "pending" }
+  ],
+  "liveLocation": { "active": true, "address": "124 Broadway, Near Central Park" }
+}

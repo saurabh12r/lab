@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "badge": "Best Seller",
+    "badgeClass": "bg-blue-50 text-[#005696]",
+    "discount": "20% OFF",
+    "name": "Comprehensive Full Body Checkup",
+    "desc": "Includes Vitamin D, B12, Thyroid profile, Lipid profile, Liver & Kidney function tests.",
+    "price": "$119",
+    "strikePrice": "$149",
+    "parameters": "85 Parameters",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5ih7ckWv3KsL36Goz11XM1GelZ2gqQTDmz75L8Ti9nV7HEmHIYCZvdzWMex9rIh2FjVYzhlzozD8hf1koZIpCKWeNB-pLV2u7gCcsFV79jJF5QvlAqVfduTsQqDSDYrkr1nWEqLXG3J7Ruh514DWXw4-9sdnUE7y3jq4LGuHMrXTpzow40tuvWVb5mTyM0eVJGd4JIslTEk2uuTmNiMfTCyx_XhAic8e3oar3jcF48vVdRuXTpUShdVymiAAqqZn7OdQoK_Gbw7d",
+    "alt": "Laboratory testing equipment"
+  },
+  {
+    "id": 2,
+    "badge": "Recommended",
+    "badgeClass": "bg-green-50 text-green-600",
+    "discount": "15% OFF",
+    "name": "Advanced Diabetes Care Package",
+    "desc": "Complete diabetes screening including HbA1c, Fasting Insulin, and Kidney Profile.",
+    "price": "$84",
+    "strikePrice": "$99",
+    "parameters": "45 Parameters",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtBuyrMf0qOF1I4w7gI3mHPkpTGgUfrIVen7B3ynnyD3842OeK0WNQ_fq6udWPXkScfXyaY5bxDEq2BaPnGMeyOKdmcAYXCrQLrcOgfUbkwwUKugM8ZZvtPdQaTWjhWaooNpYWaEg8B5RPKRU-skECXryTSs-tVO3OpNDVT7QZeHkaluOxfJIPioq1iCu64JTiNke5VEhlFjNMBwkn99TutopHlCmMuTRXpoATHJj27dO18ktCGtlDjFzyA3VvFVA5bVNQhDEfGSmE",
+    "alt": "Blood sample tube",
+    "defaultSelected": true
+  },
+  {
+    "id": 3,
+    "badge": "Specialized",
+    "badgeClass": "bg-purple-50 text-purple-600",
+    "name": "Healthy Heart Premium",
+    "desc": "Deep dive into cardiac health with Lipid profile, Cardiac Risk Markers, and ECG.",
+    "price": "$120",
+    "strikePrice": "$120",
+    "parameters": "52 Parameters",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB6sMTMy5mszvXBgRJfX7raNDtelPobSoUjH6oxtnMvngGniLfpLIw9mGbDZa3ui7MQCgDSZCGIrsRlI4dlhkDG_jVrrawEs37Bc4cD4ebqmVPgveAXPppeCkEV5JgvIky1WCt_QO7DNyVboVAu45l7fr9lmdO5udVtojNeBKZgW9PrnCeD0dPFxrOGy44MwNjQ7mkBNAClY7601stys1NFTFNxQA1uWyR_EZxu4A-LNMYerr5bo1Mkq7K7cygSAoF67VksrF9Mt5Az",
+    "alt": "Stethoscope on table"
+  },
+  {
+    "id": 4,
+    "badge": "Senior Care",
+    "badgeClass": "bg-slate-100 text-slate-600",
+    "discount": "10% OFF",
+    "name": "Senior Citizen Basic",
+    "desc": "Essential checks for age-related concerns including bone health and iron deficiency.",
+    "price": "$72",
+    "strikePrice": "$80",
+    "parameters": "60 Parameters",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCRd3l0EE4TxozuQsewmIxMnmNiziVamDJ_qV_ewq3aY0ymBUACfOOE1OqtK5OAdOrFn-67zzs4zL0j53yf49oF08kEB_k4XSD3H65ofbjiV3KTslZPO9AZRUK3cXHw9nt47n8CA-4fp1Dkkp8tsHTbJ7q8NGl39p-hICEfww8idN2Nm4pETdcggH1sFyOHdT31fe6li52eDAu5OGZ3TmkIvZj_vNAngR6ME04x-d9eaaEKLIAWYZ1ZFzOw8ng5HyXctKv51kBCim_u",
+    "alt": "Smiling elderly person"
+  },
+  {
+    "id": 5,
+    "name": "Thyroid Profile (Total)",
+    "desc": "Screening for T3, T4, and TSH levels to monitor thyroid gland function.",
+    "price": "$35",
+    "parameters": "3 Parameters",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZKe6y_ACUC_YtN5bf5mM5f0qrjB7O_6vCZ9DuZ1PCMRZa28pg_p_cO_SuFw4mPrXIk1GRLMVi-ak3lPWY4FuLcBGGpv6E-RygiDfPNr6Of0_hKtKvYgVImp0jF7tXYgf97Bi72Ngo-mO0sOs_dvoSkHNT4YqOvbNJxAKE-yHJH05V4jSZWLJlz3h4JQlQFxdEBIwLqSLIt6AMm5LGUUwhHlTty5D7MAL2D2mG3d41SpeLpOMMp6q_REARjml4koJPmZLbYvvqCA6d",
+    "alt": "Microscope close up"
+  },
+  {
+    "id": 6,
+    "discount": "50% OFF",
+    "name": "Women's Wellness - Essential",
+    "desc": "Tailored for women including Iron deficiency, Calcium, and Hormonal profile.",
+    "price": "$90",
+    "strikePrice": "$180",
+    "parameters": "65 Parameters",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-stkLPyrHPVX02VDghSKJUmwrzhLnc5JKnxRraPZpso30jdsfZq1uTUkLb1zO4z7_fvQwvXkmfrCpM-QYmqEh7bhYh9uMyVy8wQ59bzlejaAe0g6DIYRMH2Uqgpn7I0h004239cHYWJexr0Pc4-GmNQYySnAo7r3WYdbFHjEDifeVpWXmEbtrGaqeAwDjowRg3a1luroMVgaUjsSl9PimgzaSIN6no8SnJLqqiLjSuz-mm8ujTJR_fnFW3lSpgl0i0tg6JZbMMEf",
+    "alt": "Fitness lifestyle"
+  }
+]

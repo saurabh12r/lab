@@ -1,0 +1,5 @@
+[
+  { "id": "BNR-001", "title": "Comprehensive Health Checkup", "imageUrl": "https://placehold.co/600x257/e2e8f0/64748b?text=Banner+1", "link": "/packages/comprehensive-health", "startDate": "—", "endDate": null, "status": "Active" },
+  { "id": "BNR-002", "title": "Diabetes Screening Camp", "imageUrl": "https://placehold.co/600x257/e2e8f0/64748b?text=Banner+2", "link": "/campaigns/diabetes-screening", "startDate": "Oct 15, 2023", "endDate": "Nov 15, 2023", "status": "Scheduled" },
+  { "id": "BNR-003", "title": "Seasonal Flu Awareness", "imageUrl": "https://placehold.co/600x257/e2e8f0/64748b?text=Banner+3", "link": "/campaigns/flu", "startDate": "Dec 1, 2023", "endDate": "Dec 31, 2023", "status": "Disabled" }
+]

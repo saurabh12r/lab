@@ -1,0 +1,13 @@
+{
+  "statCards": [
+    { "icon": "lab_profile", "iconBg": "bg-blue-50 text-blue-600", "label": "Total Reports", "value": "24" },
+    { "icon": "check_circle", "iconBg": "bg-green-50 text-green-600", "label": "Completed", "value": "21" },
+    { "icon": "pending", "iconBg": "bg-amber-50 text-amber-600", "label": "Processing", "value": "3" }
+  ],
+  "reports": [
+    { "name": "Complete Blood Count", "sub": "Includes 14 parameters", "icon": "hematology", "iconBg": "bg-[#0b73a8]/10 text-[#0b73a8]", "bookingId": "#BK-2023-001", "date": "Oct 24, 2023", "status": "Ready" },
+    { "name": "Thyroid Profile", "sub": "T3, T4, TSH", "icon": "endocrinology", "iconBg": "bg-amber-50 text-amber-600", "bookingId": "#BK-2023-002", "date": "Oct 20, 2023", "status": "Processing" },
+    { "name": "Lipid Profile", "sub": "Cholesterol check", "icon": "water_drop", "iconBg": "bg-red-50 text-red-600", "bookingId": "#BK-2023-003", "date": "Sep 15, 2023", "status": "Ready" },
+    { "name": "HbA1c", "sub": "Diabetes monitoring", "icon": "glucose", "iconBg": "bg-purple-50 text-purple-600", "bookingId": "#BK-2023-004", "date": "Aug 05, 2023", "status": "Ready" }
+  ]
+}

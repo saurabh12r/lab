@@ -1,0 +1,7 @@
+[
+  { "id": "ORD-7829", "customerName": "Alice Smith", "customerPhone": "+1 (555) 123-4567", "customerInitials": "AS", "packageName": "Full Body Checkup", "packageColor": "blue", "date": "Oct 24, 2023", "time": "10:30 AM", "city": "New York, NY", "status": "Completed", "paymentStatus": "Paid" },
+  { "id": "ORD-7830", "customerName": "Michael Johnson", "customerPhone": "+1 (555) 987-6543", "customerInitials": "MJ", "packageName": "Thyroid Profile", "packageColor": "purple", "date": "Oct 24, 2023", "time": "11:15 AM", "city": "Los Angeles, CA", "status": "Pending", "paymentStatus": "Paid" },
+  { "id": "ORD-7831", "customerName": "Sarah Williams", "customerPhone": "+1 (555) 456-7890", "customerInitials": "SW", "packageName": "Vitamin D Test", "packageColor": "green", "date": "Oct 23, 2023", "time": "02:45 PM", "city": "Chicago, IL", "status": "Processing", "paymentStatus": "Paid" },
+  { "id": "ORD-7832", "customerName": "David Robinson", "customerPhone": "+1 (555) 234-5678", "customerInitials": "DR", "packageName": "Diabetes Screen", "packageColor": "blue", "date": "Oct 23, 2023", "time": "09:00 AM", "city": "Houston, TX", "status": "Report Ready", "paymentStatus": "Pending" },
+  { "id": "ORD-7833", "customerName": "Emma Davis", "customerPhone": "+1 (555) 876-5432", "customerInitials": "ED", "packageName": "CBC Panel", "packageColor": "orange", "date": "Oct 22, 2023", "time": "01:00 PM", "city": "Phoenix, AZ", "status": "Sample Collected", "paymentStatus": "Paid" }
+]

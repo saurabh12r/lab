@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking Step 1: Select Package - Diagnostic Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#005696", // Royal Blue as requested for primary actions
+                        "primary-dark": "#003d6b",
+                        "navy": "#002B49", // Navy Blue for headers
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1a23",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-navy dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">science</span>
+</div>
+<h2 class="text-navy dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Diagnostic Lab</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Tests</a>
+<a class="text-primary text-sm font-bold leading-normal transition-colors" href="#">Packages</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<div class="hidden lg:flex w-full max-w-xs items-center rounded-xl bg-slate-100 dark:bg-slate-800 px-3 py-2">
+<span class="material-symbols-outlined text-slate-400">search</span>
+<input class="w-full bg-transparent border-none text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-0" placeholder="Search"/>
+</div>
+<button class="flex items-center justify-center rounded-xl bg-primary hover:bg-primary-dark text-white text-sm font-bold h-10 px-6 transition-colors">
+                Login
+            </button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 layout-container flex flex-col md:flex-row max-w-[1440px] mx-auto w-full pt-8 pb-20 px-4 md:px-8 gap-8">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 flex-shrink-0 flex flex-col gap-6">
+<div class="flex flex-col gap-1">
+<h1 class="text-navy dark:text-white text-lg font-bold">Categories</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Filter by health concern</p>
+</div>
+<div class="flex flex-col gap-2">
+<button class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary dark:bg-primary/20 transition-colors text-left group">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="text-sm font-bold">All Packages</span>
+</button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors text-left group">
+<span class="material-symbols-outlined group-hover:text-primary">accessibility_new</span>
+<span class="text-sm font-medium">Full Body Checkups</span>
+</button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors text-left group">
+<span class="material-symbols-outlined group-hover:text-primary">monitor_heart</span>
+<span class="text-sm font-medium">Diabetes Care</span>
+</button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors text-left group">
+<span class="material-symbols-outlined group-hover:text-primary">favorite</span>
+<span class="text-sm font-medium">Heart Health</span>
+</button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors text-left group">
+<span class="material-symbols-outlined group-hover:text-primary">elderly</span>
+<span class="text-sm font-medium">Senior Citizen</span>
+</button>
+<button class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors text-left group">
+<span class="material-symbols-outlined group-hover:text-primary">female</span>
+<span class="text-sm font-medium">Women's Health</span>
+</button>
+</div>
+<div class="mt-4 p-4 rounded-xl bg-blue-50 dark:bg-slate-800 border border-blue-100 dark:border-slate-700">
+<div class="flex items-center gap-2 mb-2 text-navy dark:text-white font-bold text-sm">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+                    Need Help?
+                </div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Call our health advisors for guidance on choosing the right package.</p>
+<a class="text-sm font-bold text-primary hover:underline" href="tel:+1234567890">Call +1 (800) 123-4567</a>
+</div>
+</aside>
+<!-- Main Listing Area -->
+<div class="flex-1 flex flex-col gap-6">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-slate-500 text-sm">
+<span>Home</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span>Booking</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-medium">Select Package</span>
+</div>
+<h1 class="text-navy dark:text-white text-3xl md:text-4xl font-black tracking-tight">Step 1: Select Package</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base">Choose a health checkup package that suits your specific needs.</p>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="relative w-full group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors">search</span>
+</div>
+<input class="block w-full pl-12 pr-4 py-4 rounded-xl border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-slate-400" placeholder="Search for specific tests, packages or parameters (e.g., Vitamin D, Thyroid)" type="text"/>
+</div>
+<!-- Packages Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm">
+                            20% OFF
+                        </div>
+<div class="w-full h-full bg-slate-200" data-alt="Medical laboratory equipment setup for blood test">
+<img alt="Laboratory testing equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd5ih7ckWv3KsL36Goz11XM1GelZ2gqQTDmz75L8Ti9nV7HEmHIYCZvdzWMex9rIh2FjVYzhlzozD8hf1koZIpCKWeNB-pLV2u7gCcsFV79jJF5QvlAqVfduTsQqDSDYrkr1nWEqLXG3J7Ruh514DWXw4-9sdnUE7y3jq4LGuHMrXTpzow40tuvWVb5mTyM0eVJGd4JIslTEk2uuTmNiMfTCyx_XhAic8e3oar3jcF48vVdRuXTpUShdVymiAAqqZn7OdQoK_Gbw7d"/>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<span class="inline-block px-2 py-1 bg-blue-50 dark:bg-blue-900/30 text-primary text-xs font-bold rounded-lg uppercase tracking-wider">Best Seller</span>
+</div>
+<h3 class="text-navy dark:text-white text-lg font-bold leading-tight mb-2">Comprehensive Full Body Checkup</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Includes Vitamin D, B12, Thyroid profile, Lipid profile, Liver &amp; Kidney function tests.</p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs text-slate-400 line-through">$149</span>
+<div class="flex items-center gap-1">
+<span class="text-xl font-bold text-navy dark:text-white">$119</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-xs text-slate-500 font-medium mb-1">85 Parameters</div>
+<button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-1.5 px-4 rounded-lg text-sm transition-colors duration-200">
+                                    Select
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 (Selected State) -->
+<div class="relative group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md border-2 border-primary overflow-hidden transition-all duration-300 ring-4 ring-primary/10">
+<div class="absolute top-3 right-3 z-10">
+<div class="bg-primary text-white rounded-full p-1 shadow-sm">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+</div>
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm">
+                            15% OFF
+                        </div>
+<div class="w-full h-full bg-slate-200" data-alt="Close up of blood sample in test tube">
+<img alt="Blood sample tube" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtBuyrMf0qOF1I4w7gI3mHPkpTGgUfrIVen7B3ynnyD3842OeK0WNQ_fq6udWPXkScfXyaY5bxDEq2BaPnGMeyOKdmcAYXCrQLrcOgfUbkwwUKugM8ZZvtPdQaTWjhWaooNpYWaEg8B5RPKRU-skECXryTSs-tVO3OpNDVT7QZeHkaluOxfJIPioq1iCu64JTiNke5VEhlFjNMBwkn99TutopHlCmMuTRXpoATHJj27dO18ktCGtlDjFzyA3VvFVA5bVNQhDEfGSmE"/>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<span class="inline-block px-2 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-xs font-bold rounded-lg uppercase tracking-wider">Recommended</span>
+</div>
+<h3 class="text-navy dark:text-white text-lg font-bold leading-tight mb-2">Advanced Diabetes Care Package</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Complete diabetes screening including HbA1c, Fasting Insulin, and Kidney Profile.</p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs text-slate-400 line-through">$99</span>
+<div class="flex items-center gap-1">
+<span class="text-xl font-bold text-navy dark:text-white">$84</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-xs text-slate-500 font-medium mb-1">45 Parameters</div>
+<button class="bg-primary border-2 border-primary text-white font-bold py-1.5 px-4 rounded-lg text-sm transition-colors duration-200">
+                                    Selected
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<div class="w-full h-full bg-slate-200" data-alt="Doctor holding stethoscope heart health concept">
+<img alt="Stethoscope on table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6sMTMy5mszvXBgRJfX7raNDtelPobSoUjH6oxtnMvngGniLfpLIw9mGbDZa3ui7MQCgDSZCGIrsRlI4dlhkDG_jVrrawEs37Bc4cD4ebqmVPgveAXPppeCkEV5JgvIky1WCt_QO7DNyVboVAu45l7fr9lmdO5udVtojNeBKZgW9PrnCeD0dPFxrOGy44MwNjQ7mkBNAClY7601stys1NFTFNxQA1uWyR_EZxu4A-LNMYerr5bo1Mkq7K7cygSAoF67VksrF9Mt5Az"/>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<span class="inline-block px-2 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-xs font-bold rounded-lg uppercase tracking-wider">Specialized</span>
+</div>
+<h3 class="text-navy dark:text-white text-lg font-bold leading-tight mb-2">Healthy Heart Premium</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Deep dive into cardiac health with Lipid profile, Cardiac Risk Markers, and ECG.</p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs text-slate-400 line-through">$120</span>
+<div class="flex items-center gap-1">
+<span class="text-xl font-bold text-navy dark:text-white">$120</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-xs text-slate-500 font-medium mb-1">52 Parameters</div>
+<button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-1.5 px-4 rounded-lg text-sm transition-colors duration-200">
+                                    Select
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm">
+                            10% OFF
+                        </div>
+<div class="w-full h-full bg-slate-200" data-alt="Senior couple smiling outdoors healthy aging">
+<img alt="Smiling elderly person" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRd3l0EE4TxozuQsewmIxMnmNiziVamDJ_qV_ewq3aY0ymBUACfOOE1OqtK5OAdOrFn-67zzs4zL0j53yf49oF08kEB_k4XSD3H65ofbjiV3KTslZPO9AZRUK3cXHw9nt47n8CA-4fp1Dkkp8tsHTbJ7q8NGl39p-hICEfww8idN2Nm4pETdcggH1sFyOHdT31fe6li52eDAu5OGZ3TmkIvZj_vNAngR6ME04x-d9eaaEKLIAWYZ1ZFzOw8ng5HyXctKv51kBCim_u"/>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<span class="inline-block px-2 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-bold rounded-lg uppercase tracking-wider">Senior Care</span>
+</div>
+<h3 class="text-navy dark:text-white text-lg font-bold leading-tight mb-2">Senior Citizen Basic</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Essential checks for age-related concerns including bone health and iron deficiency.</p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs text-slate-400 line-through">$80</span>
+<div class="flex items-center gap-1">
+<span class="text-xl font-bold text-navy dark:text-white">$72</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-xs text-slate-500 font-medium mb-1">60 Parameters</div>
+<button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-1.5 px-4 rounded-lg text-sm transition-colors duration-200">
+                                    Select
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<div class="w-full h-full bg-slate-200" data-alt="Microscope lens zooming in on sample">
+<img alt="Microscope close up" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZKe6y_ACUC_YtN5bf5mM5f0qrjB7O_6vCZ9DuZ1PCMRZa28pg_p_cO_SuFw4mPrXIk1GRLMVi-ak3lPWY4FuLcBGGpv6E-RygiDfPNr6Of0_hKtKvYgVImp0jF7tXYgf97Bi72Ngo-mO0sOs_dvoSkHNT4YqOvbNJxAKE-yHJH05V4jSZWLJlz3h4JQlQFxdEBIwLqSLIt6AMm5LGUUwhHlTty5D7MAL2D2mG3d41SpeLpOMMp6q_REARjml4koJPmZLbYvvqCA6d"/>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h3 class="text-navy dark:text-white text-lg font-bold leading-tight mb-2">Thyroid Profile (Total)</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Screening for T3, T4, and TSH levels to monitor thyroid gland function.</p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="text-xl font-bold text-navy dark:text-white">$35</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-xs text-slate-500 font-medium mb-1">3 Parameters</div>
+<button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-1.5 px-4 rounded-lg text-sm transition-colors duration-200">
+                                    Select
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm">
+                            50% OFF
+                        </div>
+<div class="w-full h-full bg-slate-200" data-alt="Woman jogging in park fitness concept">
+<img alt="Fitness lifestyle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-stkLPyrHPVX02VDghSKJUmwrzhLnc5JKnxRraPZpso30jdsfZq1uTUkLb1zO4z7_fvQwvXkmfrCpM-QYmqEh7bhYh9uMyVy8wQ59bzlejaAe0g6DIYRMH2Uqgpn7I0h004239cHYWJexr0Pc4-GmNQYySnAo7r3WYdbFHjEDifeVpWXmEbtrGaqeAwDjowRg3a1luroMVgaUjsSl9PimgzaSIN6no8SnJLqqiLjSuz-mm8ujTJR_fnFW3lSpgl0i0tg6JZbMMEf"/>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h3 class="text-navy dark:text-white text-lg font-bold leading-tight mb-2">Women's Wellness - Essential</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4 line-clamp-2">Tailored for women including Iron deficiency, Calcium, and Hormonal profile.</p>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-xs text-slate-400 line-through">$180</span>
+<div class="flex items-center gap-1">
+<span class="text-xl font-bold text-navy dark:text-white">$90</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-xs text-slate-500 font-medium mb-1">65 Parameters</div>
+<button class="bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-1.5 px-4 rounded-lg text-sm transition-colors duration-200">
+                                    Select
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-6">
+<button class="text-primary font-bold text-sm flex items-center gap-2 hover:bg-blue-50 dark:hover:bg-slate-800 px-4 py-2 rounded-xl transition-colors">
+<span>Load More Packages</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Sticky Bottom Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-40 p-4">
+<div class="layout-container max-w-[1440px] mx-auto flex items-center justify-between px-4 md:px-8">
+<div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+<div>
+<span class="block text-xs text-slate-500 dark:text-slate-400 font-medium">Selected Package</span>
+<span class="block text-navy dark:text-white font-bold">Advanced Diabetes Care</span>
+</div>
+<div class="h-8 w-[1px] bg-slate-200 dark:bg-slate-700 hidden sm:block"></div>
+<div>
+<span class="block text-xs text-slate-500 dark:text-slate-400 font-medium">Total Amount</span>
+<span class="block text-lg text-primary font-black">$84.00</span>
+</div>
+</div>
+<button class="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white rounded-xl px-8 py-3 font-bold text-sm sm:text-base shadow-lg shadow-blue-500/30 transition-all hover:scale-105 active:scale-95">
+<span>Continue</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

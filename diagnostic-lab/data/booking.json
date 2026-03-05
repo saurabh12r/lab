@@ -1,0 +1,41 @@
+{
+  "cities": [
+    { "value": "mumbai", "label": "Mumbai", "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuClJmipt_rmRVHuHAG3W3Ty_JU_Yr967tkHleTHAn6k4cHKgBaQiXQ3X2DLNY61AtRCC4qIhev7DBSyCK-g-XSmqi1iwrScwEc9OeU5Wy8CMGdI1MPljbWCPTF5Ed4Fq8mTRlj35C7l356Za-fRM3YMTAIFSTI64Mtq3PStBgMfEzvKin3L6KeBuF9sv1CrTgJuV9OzRr6zW83Qx0A4nF5rdq0MsZh0W37DAOKVyucFXV3HTGmoNCcGFM3YbLkKscaI2iAxOM-axIOd", "alt": "Mumbai Gateway of India" },
+    { "value": "delhi", "label": "Delhi", "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAW0TLzA_QSFlqlZFnmQmXpZ13syl6gMCeshk5NztM2b1R3nVReD2LP0uCZwNqg0-FwgBJxcWG7VfSUjvb4i3ROEmmulMUmbgu4U-IaohZf_4Pu1bFBX7HBdT19QcH1BYDnR5CYXAw_S3JcXSjFg5rm4Z-5CX_B26s8qaBsCSQ4i-JcTBSCfQmk9cIzCT8Oy12pE1mCayyClv59hVMTflgpiE0Frc99PQwBh2hHtAu0wc_p-eA-jA4u9m7K7p53N-8-62PYIA3FINNZ", "alt": "Delhi India Gate" },
+    { "value": "bangalore", "label": "Bangalore", "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuClC4jYB-jMFyEjfi9BGIpFvvfcSkDuj2-R1C5NAcgDuEqg8ykvYJDzullRXSQqsY0VKXtrquydYszJahOihIAU6fARXp68lEDfvvYl4Rj2B4sjgE7gfLEXZxpAR5P4wkXqa15bOP6lc3R0S_8upwpsLNB51NthtFBdO-FVXRxIkuh-S6TbmGVt_0QDn3jvArYOdnHv2KwNpfUUbzs9hCHpoG3ZnlAAAogC9qmLN43F0HTawK21ZUOrhOcYr3AcAW1bHk3VabO0TwKT", "alt": "Bangalore Vidhana Soudha" },
+    { "value": "chennai", "label": "Chennai", "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAu1Vg3kJ4vFhF-T2T7TXOm-Dukv4yjRpx6a6rHQCgTZSdrvVSpJiGsRQq5b0u0mC-n1vAe4rqWlcRjuhROjlRQ-Vg_NS9f9d1C_NOxYzYh758yvwmK7AW746EMEr24GVSddWCEtwxuTBcmozVUjOgvGxpt51XWFYXxu9Cp_pYFZxR3zlyNfgcoENZOPIE0JV080jvF19Uv_PGbRTkAzN7w5my2Uu0ito_Y3dMk7TnRGt6-g7juvlQwRUMZUhMwfBFXhxnzGCrh2Pb5", "alt": "Chennai Central Railway Station" },
+    { "value": "hyderabad", "label": "Hyderabad", "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCy05PjQQDQ6pfQ96tlWIni7jnbLLRopzTpyistpuQTdOEThn_YZAjF4o3bAM4g3QzxyRh-9nA0NRz2HYd0mqXVL9r1k06oK3pvj98qVT3UbjWpYb0MwwLi9rqtitUjxSaKAwyqXALpLmvo8zvvi4E23x25Q_rQ9BQzAsVsFOroY7sLwl5XVBTHyruQXJ0SdGcWSr855wy2vg0-ABNpYvKYd0lFSpHSjhvD-dv9hPZjJ9l1OPgX16a1KwgqL4r3SVDVznu2Rx5Rx7mo", "alt": "Hyderabad Charminar" }
+  ],
+  "areas": {
+    "mumbai": ["Andheri West", "Bandra", "Juhu", "Powai", "Dadar", "Worli"],
+    "delhi": ["Connaught Place", "Lajpat Nagar", "Rohini", "Dwarka", "Saket", "Karol Bagh"],
+    "bangalore": ["Koramangala", "Indiranagar", "Whitefield", "HSR Layout", "JP Nagar", "Jayanagar"],
+    "chennai": ["Anna Nagar", "T. Nagar", "Adyar", "Velachery", "Mylapore", "Tambaram"],
+    "hyderabad": ["Banjara Hills", "Jubilee Hills", "Hitech City", "Madhapur", "Secunderabad", "Kukatpally"]
+  },
+  "slots": {
+    "morning": [
+      { "time": "06:00 AM", "disabled": false },
+      { "time": "06:30 AM", "disabled": false },
+      { "time": "07:00 AM", "disabled": false },
+      { "time": "07:30 AM", "disabled": false },
+      { "time": "08:00 AM", "disabled": false },
+      { "time": "08:30 AM", "disabled": true },
+      { "time": "09:00 AM", "disabled": false },
+      { "time": "09:30 AM", "disabled": false }
+    ],
+    "afternoon": [
+      { "time": "12:00 PM", "disabled": false },
+      { "time": "12:30 PM", "disabled": false },
+      { "time": "01:00 PM", "disabled": false },
+      { "time": "01:30 PM", "disabled": true },
+      { "time": "02:00 PM", "disabled": false }
+    ],
+    "evening": [
+      { "time": "05:00 PM", "disabled": false },
+      { "time": "05:30 PM", "disabled": false },
+      { "time": "06:00 PM", "disabled": false },
+      { "time": "06:30 PM", "disabled": false }
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Diagnostic Lab - Medical Report Viewer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0fa5f0",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col">
+<!-- Header Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-[28px]">biotech</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Diagnostic Lab</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9 hidden md:flex">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Tests</a>
+<a class="text-slate-900 dark:text-white font-semibold text-sm leading-normal" href="#">Reports</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary/10 hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 text-primary transition-colors text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Log Out</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border border-slate-200 dark:border-slate-700" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCw7XQFAeaVihJoRYwmKbELJBkqn66NyrHsobrdLOwMXUm3tK0-8K2kam6s23Nbuc1fU-SWlQxwbZJ7ftekAoQtc44NgzE-8ViDRKFv4jQVHYW2ctmQaTGTlOgMSYn0r5g7DD5Td9NPl-RAi0jE8lWHC8AWUaPgy5BoiZgDZ_nu2ErJuOSGu6AhrufbSUPVwmbyD3J9bD0GfiZYkCdpgaOXz78zupD4mAX_SlmPvk-eWH34pi_Qr_I67eBL0sKuAKNVoIu-ORntsany");'></div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col items-center py-6 px-4 sm:px-8 w-full">
+<div class="w-full max-w-[1024px] flex flex-col gap-6">
+<!-- Breadcrumbs & Meta -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary dark:hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                            Back to My Reports
+                        </a>
+</div>
+<h1 class="text-slate-900 dark:text-slate-100 text-2xl sm:text-3xl font-bold tracking-tight">Complete Blood Count (CBC) Report</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Generated on Oct 24, 2023 • Reference ID: <span class="font-mono text-slate-700 dark:text-slate-300">#982374</span></p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 p-1">
+<button class="p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded transition-colors tooltip" title="Share Report">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded transition-colors tooltip" title="Print Report">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+<div class="w-px h-6 bg-slate-200 dark:bg-slate-700 mx-1 self-center"></div>
+<button class="p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 rounded transition-colors tooltip" title="Fullscreen">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</button>
+</div>
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-sky-500 text-white font-semibold py-2.5 px-5 rounded-lg shadow-sm shadow-sky-200 dark:shadow-none transition-all">
+<span class="material-symbols-outlined text-[20px] font-variation-settings-FILL-1">download</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+<!-- PDF Viewer Container -->
+<div class="bg-slate-200 dark:bg-slate-800 rounded-xl p-1 shadow-inner border border-slate-300 dark:border-slate-700 overflow-hidden flex flex-col h-[800px] max-h-[75vh]">
+<!-- Mock PDF Toolbar (Viewer Controls) -->
+<div class="bg-slate-700 text-white p-2 flex items-center justify-between rounded-t-lg text-sm">
+<div class="flex items-center gap-4">
+<span class="opacity-80">1 / 4</span>
+<div class="h-4 w-px bg-slate-500"></div>
+<button class="hover:bg-slate-600 p-1 rounded"><span class="material-symbols-outlined text-[18px]">remove</span></button>
+<span class="font-mono">100%</span>
+<button class="hover:bg-slate-600 p-1 rounded"><span class="material-symbols-outlined text-[18px]">add</span></button>
+</div>
+<div class="hidden sm:flex items-center gap-2 opacity-80">
+<span>CBC_Report_Oct24.pdf</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:bg-slate-600 p-1 rounded"><span class="material-symbols-outlined text-[18px]">rotate_right</span></button>
+</div>
+</div>
+<!-- PDF Content Area (Simulated) -->
+<div class="flex-1 bg-slate-500/50 overflow-y-auto p-8 flex justify-center custom-scrollbar">
+<div class="bg-white min-h-[1000px] w-full max-w-[700px] shadow-2xl relative flex flex-col p-12 text-slate-800">
+<!-- Header of the Document -->
+<div class="border-b-2 border-primary pb-6 mb-8 flex justify-between items-start">
+<div>
+<h1 class="text-2xl font-bold text-slate-900 mb-1">MEDICAL LABORATORY REPORT</h1>
+<p class="text-sm text-slate-500 uppercase tracking-wide">Confidential</p>
+</div>
+<div class="text-right">
+<div class="text-primary font-bold text-lg mb-1">Diagnostic Lab Inc.</div>
+<p class="text-xs text-slate-500">123 Health Avenue, Medical District</p>
+<p class="text-xs text-slate-500">New York, NY 10001</p>
+<p class="text-xs text-slate-500">Ph: (555) 123-4567</p>
+</div>
+</div>
+<!-- Patient Info Grid -->
+<div class="grid grid-cols-2 gap-x-12 gap-y-4 mb-8 bg-slate-50 p-4 rounded-lg border border-slate-100">
+<div>
+<p class="text-xs text-slate-500 uppercase font-semibold mb-0.5">Patient Name</p>
+<p class="font-medium">Jonathan Doe</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-semibold mb-0.5">Sample ID</p>
+<p class="font-medium">#982374-CBC</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-semibold mb-0.5">Age / Gender</p>
+<p class="font-medium">34 Y / Male</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-semibold mb-0.5">Collection Date</p>
+<p class="font-medium">Oct 23, 2023 08:30 AM</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-semibold mb-0.5">Referred By</p>
+<p class="font-medium">Dr. Sarah Smith</p>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase font-semibold mb-0.5">Report Date</p>
+<p class="font-medium">Oct 24, 2023 10:15 AM</p>
+</div>
+</div>
+<!-- Test Results Table -->
+<div class="mb-8">
+<h3 class="font-bold text-lg mb-4 text-slate-900 border-b border-slate-200 pb-2">Complete Blood Count</h3>
+<table class="w-full text-sm text-left">
+<thead class="text-xs text-slate-500 uppercase bg-slate-50 border-b border-slate-200">
+<tr>
+<th class="py-3 px-2 font-semibold">Test Name</th>
+<th class="py-3 px-2 font-semibold">Result</th>
+<th class="py-3 px-2 font-semibold">Units</th>
+<th class="py-3 px-2 font-semibold">Reference Range</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100">
+<tr>
+<td class="py-3 px-2 font-medium">Hemoglobin</td>
+<td class="py-3 px-2 font-bold text-emerald-600">14.5</td>
+<td class="py-3 px-2 text-slate-500">g/dL</td>
+<td class="py-3 px-2 text-slate-500">13.5 - 17.5</td>
+</tr>
+<tr>
+<td class="py-3 px-2 font-medium">RBC Count</td>
+<td class="py-3 px-2 font-bold text-emerald-600">4.9</td>
+<td class="py-3 px-2 text-slate-500">mil/µL</td>
+<td class="py-3 px-2 text-slate-500">4.5 - 5.9</td>
+</tr>
+<tr>
+<td class="py-3 px-2 font-medium">WBC Count</td>
+<td class="py-3 px-2 font-bold text-red-500">11.2 <span class="text-[10px] align-top">H</span></td>
+<td class="py-3 px-2 text-slate-500">thou/µL</td>
+<td class="py-3 px-2 text-slate-500">4.5 - 11.0</td>
+</tr>
+<tr>
+<td class="py-3 px-2 font-medium">Platelet Count</td>
+<td class="py-3 px-2 font-bold text-emerald-600">250</td>
+<td class="py-3 px-2 text-slate-500">thou/µL</td>
+<td class="py-3 px-2 text-slate-500">150 - 450</td>
+</tr>
+<tr>
+<td class="py-3 px-2 font-medium">Hematocrit</td>
+<td class="py-3 px-2 font-bold text-emerald-600">42.0</td>
+<td class="py-3 px-2 text-slate-500">%</td>
+<td class="py-3 px-2 text-slate-500">41.0 - 50.0</td>
+</tr>
+<tr>
+<td class="py-3 px-2 font-medium">MCV</td>
+<td class="py-3 px-2 font-bold text-emerald-600">88</td>
+<td class="py-3 px-2 text-slate-500">fL</td>
+<td class="py-3 px-2 text-slate-500">80 - 100</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Doctor Note -->
+<div class="mt-auto pt-8 border-t border-slate-200">
+<h4 class="font-bold text-sm mb-2">Clinical Notes:</h4>
+<p class="text-sm text-slate-600 italic">"WBC count is slightly elevated, indicating a possible minor infection or inflammation. Follow up recommended if symptoms persist."</p>
+<div class="mt-12 flex justify-between items-end">
+<div class="flex flex-col items-center">
+<!-- Signature Image Placeholder -->
+<div class="h-12 w-32 bg-contain bg-no-repeat bg-center opacity-70 mb-2" data-alt="Doctor Signature" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNGqu8_m7fEOohq1fTZdlSEoM1jGnpe3K1VZoZrXHwwvneCV2LwCXhuZ2JroXV4VwJgQl4OIM-HCPwBdCbOKrNAmnWDq7xwvnvsRDd8jg2Sw54uczx-LEp6-JhAuIN1q3vib_l160pJsDtVSBI1qbsd4V-J1jTI-A8RgctTaFN60Xat8-WSOEETBGCmViLJ07DfnneNGKhvNNTpqg_Ikzjkqr0fXEKAHc6mUkY1Nda4QOmFa-1h45nY9a6qVdWpnAV_SYJ4adowSs0');"></div>
+<div class="w-40 h-px bg-slate-900 mb-1"></div>
+<p class="text-xs font-bold">Dr. Richard Roe, MD</p>
+<p class="text-[10px] text-slate-500">Pathologist</p>
+</div>
+<div class="text-right">
+<img alt="QR Code for verification" class="w-16 h-16 opacity-80 mix-blend-multiply" data-alt="Verification QR Code" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9-YklGHenwdpad2J2AxN4Nj7jOts-PXnTRbL7ORZJF0BTGzdqF4kWt2r9toqY8yWYEcGjxKCK3hE74nnFmm9QTAWDNG6hfDF5Rqkp-n3eRAX6Sk0OWynRDn7vHVhccf0OImZmxCCKv4KF4HXyo_eYgF2ZV_eIO100dqRPnIev-xjoiUPMk9kVywjP664N4wHsvVDNP0Y7UYrSexmWtBf3VLj3SnBfrKAMbDmmNV_CinOzFUxJsCM8078lN9d0dbs3_j1leY6n_hl6"/>
+<p class="text-[10px] text-slate-400 mt-1">Scan to Verify</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-6 px-10">
+<div class="max-w-[1024px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<p>© 2023 Diagnostic Lab. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>

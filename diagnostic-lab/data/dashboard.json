@@ -1,0 +1,17 @@
+{
+  "profileImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUkjbAveoUGETuIA7rPmcCAGX-byPdpfQBlHV7hHJVEZfsoh8RiJYkW23HThy4Xe5ZPpv-rUJ-uyqJArKxmas2cUT8lOGse23oryUqJ5VafTXTRyYvBdhvGmYkhpn5kJ6y6fL2BvApqmc-U5IqB7e2LX1zotP02NjbTYBgAZom1ujNNc_xpSJALxrq6L3DGgfmhFTVFf61OWDrtdiWx5XEDi-s0Ut9N4etbSZF0vqK6cXHQyEbNtwZPSYHFYps1tGbv2DKp54eNvyI",
+  "stats": [
+    { "label": "All", "count": 12, "active": true, "hoverColor": "" },
+    { "label": "Upcoming", "count": 2, "active": false, "hoverColor": "hover:border-[#0a6a99]/50 hover:text-[#0a6a99]" },
+    { "label": "Completed", "count": 8, "active": false, "hoverColor": "hover:border-emerald-400/50 hover:text-emerald-600" },
+    { "label": "Pending", "count": 1, "active": false, "hoverColor": "hover:border-yellow-400/50 hover:text-yellow-600" },
+    { "label": "Cancelled", "count": 1, "active": false, "hoverColor": "hover:border-red-400/50 hover:text-red-600" }
+  ],
+  "bookings": [
+    { "id": "#BK-2023-001", "package": "Full Body Checkup", "icon": "medical_services", "iconBg": "bg-blue-100 text-blue-600", "date": "Oct 24, 2023", "city": "New York", "area": "Brooklyn", "status": "Sample Collected", "action": "Report", "actionIcon": "download", "actionLink": "/reports", "actionClass": "text-[#0a6a99] hover:text-[#064b6e]" },
+    { "id": "#BK-2023-002", "package": "Thyroid Profile", "icon": "biotech", "iconBg": "bg-purple-100 text-purple-600", "date": "Oct 20, 2023", "city": "New York", "area": "Manhattan", "status": "Report Ready", "action": "Report", "actionIcon": "download", "actionLink": "/reports", "actionClass": "text-[#0a6a99] hover:text-[#064b6e]" },
+    { "id": "#BK-2023-003", "package": "Diabetes Screening", "icon": "bloodtype", "iconBg": "bg-orange-100 text-orange-600", "date": "Oct 15, 2023", "city": "Jersey City", "area": "Downtown", "status": "Pending", "action": "Track Order", "actionIcon": "location_on", "actionLink": "/tracking", "actionClass": "text-slate-500 hover:text-slate-900" },
+    { "id": "#BK-2023-004", "package": "Vitamin D Test", "icon": "wb_sunny", "iconBg": "bg-indigo-100 text-indigo-600", "date": "Oct 10, 2023", "city": "New York", "area": "Queens", "status": "Completed", "action": "Report", "actionIcon": "download", "actionLink": "/reports", "actionClass": "text-[#0a6a99] hover:text-[#064b6e]" },
+    { "id": "#BK-2023-005", "package": "CBC Hemogram", "icon": "hematology", "iconBg": "bg-pink-100 text-pink-600", "date": "Sep 28, 2023", "city": "New York", "area": "Brooklyn", "status": "Cancelled", "action": "Track Order", "actionIcon": "location_on", "actionLink": "/tracking", "actionClass": "text-slate-500 hover:text-slate-900" }
+  ]
+}

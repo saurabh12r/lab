@@ -248,7 +248,7 @@ export default function AdminMediaPage() {
                       type="text"
                       value={scheduleCampaign}
                       onChange={(e) => setScheduleCampaign(e.target.value)}
-                      placeholder="e.g., World Health Day 2024"
+                      placeholder="e.g., World Health Day 2026"
                       className="w-full rounded-md border border-slate-300 bg-white text-slate-900 focus:border-[#1349ec] focus:ring-[#1349ec] sm:text-sm px-3 py-2"
                     />
                   </div>

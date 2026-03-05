@@ -48,7 +48,7 @@ export function Navbar({ variant = "lab", activeLink }: NavbarProps) {
         <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0a6a99]/10 text-[#0a6a99]">
           <span className="material-symbols-outlined text-[28px]">medical_services</span>
         </div>
-        <h2 className="text-xl font-bold leading-tight tracking-tight text-[#0d171c]">Trutest Diagnostics</h2>
+        <h2 className="text-xl font-bold leading-tight tracking-tight text-[#0d171c]">Quick Care Pathology</h2>
       </div>
       <div className="flex flex-1 justify-end gap-8">
         <nav className="hidden items-center gap-8 lg:flex">

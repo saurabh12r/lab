@@ -25,7 +25,7 @@ const DUMMY_LOCATIONS: Location[] = [
   {
     id: "LOC-001",
     city: "New York",
-    createdDate: "Jan 15, 2023",
+    createdDate: "Jan 15, 2026",
     areas: [
       { id: "A1", name: "Manhattan", zipCodes: "10001 - 10282", status: "Active" },
       { id: "A2", name: "Brooklyn", zipCodes: "11201 - 11256", status: "Active" },
@@ -36,7 +36,7 @@ const DUMMY_LOCATIONS: Location[] = [
   {
     id: "LOC-002",
     city: "Los Angeles",
-    createdDate: "Feb 10, 2023",
+    createdDate: "Feb 10, 2026",
     areas: [
       { id: "A5", name: "Downtown LA", zipCodes: "90012 - 90015", status: "Active" },
       { id: "A6", name: "Santa Monica", zipCodes: "90401 - 90405", status: "Active" },
@@ -45,7 +45,7 @@ const DUMMY_LOCATIONS: Location[] = [
   {
     id: "LOC-003",
     city: "Chicago",
-    createdDate: "Mar 5, 2023",
+    createdDate: "Mar 5, 2026",
     areas: [
       { id: "A7", name: "Loop", zipCodes: "60601 - 60606", status: "Active" },
       { id: "A8", name: "North Side", zipCodes: "60613 - 60618", status: "Active" },
@@ -54,7 +54,7 @@ const DUMMY_LOCATIONS: Location[] = [
   {
     id: "LOC-004",
     city: "Houston",
-    createdDate: "Apr 20, 2023",
+    createdDate: "Apr 20, 2026",
     areas: [
       { id: "A9", name: "Downtown Houston", zipCodes: "77002 - 77010", status: "Active" },
     ],

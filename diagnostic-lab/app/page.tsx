@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Trutest Diagnostics",
+  title: "Quick Care Pathology",
   description:
     "Book blood tests, full body checkups, and upload prescriptions online. Get accurate reports delivered to your app within 24 hours.",
 };
@@ -29,7 +29,7 @@ export default function Home() {
               <span className="material-symbols-outlined text-[28px]">medical_services</span>
             </div>
             <h2 className="text-xl font-bold leading-tight tracking-tight text-[#0d171c]">
-              Trutest Diagnostics
+              Quick Care Pathology
             </h2>
           </div>
 
@@ -326,7 +326,7 @@ export default function Home() {
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-base font-semibold leading-7 text-[#0a6a99]">Our Promise</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                  Why Choose Trutest Diagnostics?
+                  Why Choose Quick Care Pathology?
                 </p>
                 <p className="mt-6 text-lg leading-8 text-slate-600">
                   We combine advanced technology with expert care to deliver diagnostic services you can rely on.
@@ -457,7 +457,7 @@ export default function Home() {
             </div>
 
             <div className="mt-16 border-t border-slate-200 pt-8 sm:mt-20 lg:mt-24 flex flex-col sm:flex-row justify-between items-center gap-4">
-              <p className="text-xs leading-5 text-slate-500">© 2024 Trutest Diagnostics. All rights reserved.</p>
+              <p className="text-xs leading-5 text-slate-500">© 2026 Quick Care Pathology. All rights reserved.</p>
               <Link href="/admin" className="text-xs font-medium text-slate-500 hover:text-[#0a6a99] transition-colors">Admin</Link>
             </div>
           </div>

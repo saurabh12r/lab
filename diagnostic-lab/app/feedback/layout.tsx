@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Feedback – Trutest Diagnostics",
+  title: "Feedback – Quick Care Pathology",
   description: "Rate your experience and help us improve our diagnostic services.",
 };
 

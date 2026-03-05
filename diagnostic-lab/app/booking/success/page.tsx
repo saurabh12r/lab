@@ -162,7 +162,7 @@ export default function BookingSuccessPage() {
                             <a className="text-slate-600 hover:text-[#0dcc4d] transition-colors text-sm" href="#">Terms of Service</a>
                             <a className="text-slate-600 hover:text-[#0dcc4d] transition-colors text-sm" href="#">Help Center</a>
                         </div>
-                        <p className="text-slate-500 text-sm">© 2023 TruDiagnostics Labs. All rights reserved.</p>
+                        <p className="text-slate-500 text-sm">© 2026 TruDiagnostics Labs. All rights reserved.</p>
                     </div>
                 </footer>
             </div>

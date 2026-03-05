@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { getBookingSlots } from "@/services/bookingService";
 
-const MONTH_NAME = "October 2023";
+const MONTH_NAME = "October 2026";
 const MONTH_OFFSET = 0;
 const DAYS = Array.from({ length: 31 }, (_, i) => i + 1);
 const INITIAL_DAY = 5;
@@ -60,7 +60,7 @@ export default function SlotPage() {
     const [selectedDay, setSelectedDay] = useState(INITIAL_DAY);
     const [selectedSlot, setSelectedSlot] = useState("07:30 AM");
 
-    const selectedDateLabel = `Oct ${selectedDay}, 2023`;
+    const selectedDateLabel = `Oct ${selectedDay}, 2026`;
     const selectedSlotRange = selectedSlot
         ? `${selectedSlot} - ${getEndSlot(selectedSlot)}`
         : null;
@@ -102,7 +102,7 @@ export default function SlotPage() {
                                     />
                                 </svg>
                             </div>
-                            <h2 className="text-slate-900 text-xl font-bold tracking-tight">Trutest Diagnostics</h2>
+                            <h2 className="text-slate-900 text-xl font-bold tracking-tight">Quick Care Pathology</h2>
                         </Link>
 
                         <nav className="hidden md:flex items-center gap-8">
@@ -175,7 +175,7 @@ export default function SlotPage() {
                                                 <div key={d} className="text-xs font-bold text-slate-400 uppercase tracking-wider">{d}</div>
                                             ))}
 
-                                            {/* Empty offset cells: Oct 2023 starts on Sunday, offset=0 */}
+                                            {/* Empty offset cells: Oct 2026 starts on Sunday, offset=0 */}
                                             {Array.from({ length: MONTH_OFFSET }).map((_, i) => (
                                                 <span key={`e${i}`} />
                                             ))}
@@ -385,7 +385,7 @@ export default function SlotPage() {
                 {/* ── FOOTER ── */}
                 <footer className="bg-white border-t border-slate-100 py-8 mt-auto">
                     <div className="max-w-7xl mx-auto px-6 text-center text-slate-400 text-sm">
-                        <p>© 2023 Trutest Diagnostics. All rights reserved.</p>
+                        <p>© 2026 Quick Care Pathology. All rights reserved.</p>
                     </div>
                 </footer>
             </div>

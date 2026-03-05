@@ -305,7 +305,7 @@ export default function CheckoutPage() {
                 <footer className="bg-slate-100 py-6 mt-12 border-t border-slate-200">
                     <div className="flex justify-center px-4">
                         <div className="max-w-[960px] w-full flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 gap-4">
-                            <p>© 2024 Diagnostic Lab. All rights reserved.</p>
+                            <p>© 2026 Diagnostic Lab. All rights reserved.</p>
                             <div className="flex gap-6">
                                 <a className="hover:text-[#0a6a99]" href="#">Privacy Policy</a>
                                 <a className="hover:text-[#0a6a99]" href="#">Terms of Service</a>

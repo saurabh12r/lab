@@ -44,7 +44,7 @@ export default function PartnershipPage() {
                     <path clipRule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.5 16.5L16.5 10.5L15.09 9.09L10.5 13.67L8.91 12.09L7.5 13.5L10.5 16.5Z" fill="currentColor" fillRule="evenodd" />
                   </svg>
                 </div>
-                <span className="text-slate-900 text-lg font-bold tracking-tight">Trutest Diagnostics</span>
+                <span className="text-slate-900 text-lg font-bold tracking-tight">Quick Care Pathology</span>
               </Link>
               <nav className="hidden lg:flex items-center gap-6">
                 <Link className="text-slate-600 text-sm font-medium hover:text-[#0a6a99] transition-colors" href="/">Home</Link>
@@ -79,7 +79,7 @@ export default function PartnershipPage() {
                 Business Partnership
               </h1>
               <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                Partner with Trutest Diagnostics for corporate wellness, bulk testing, and employee health programs. We offer tailored solutions for enterprises.
+                Partner with Quick Care Pathology for corporate wellness, bulk testing, and employee health programs. We offer tailored solutions for enterprises.
               </p>
             </section>
 
@@ -232,7 +232,7 @@ export default function PartnershipPage() {
         {/* ── FOOTER ── */}
         <footer className="mt-auto border-t border-slate-200 bg-white">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-slate-500">© 2024 Trutest Diagnostics. All rights reserved.</p>
+            <p className="text-sm text-slate-500">© 2026 Quick Care Pathology. All rights reserved.</p>
             <div className="flex gap-6">
               <Link className="text-sm text-slate-500 hover:text-[#0a6a99] transition-colors" href="/contact">Contact</Link>
               <Link className="text-sm text-slate-500 hover:text-[#0a6a99] transition-colors" href="/partnership">Business Partnership</Link>

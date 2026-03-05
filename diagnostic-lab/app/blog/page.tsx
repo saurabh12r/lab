@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getBlogCategories, getBlogPosts } from "@/services/blogService";
 
 export const metadata: Metadata = {
-  title: "Health Blog – Trutest Diagnostics",
+  title: "Health Blog – Quick Care Pathology",
   description:
     "Expert medical articles, health tips, and the latest diagnostic news to keep you informed and healthy.",
 };
@@ -34,7 +34,7 @@ export default function BlogPage() {
                     <path clipRule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.5 16.5L16.5 10.5L15.09 9.09L10.5 13.67L8.91 12.09L7.5 13.5L10.5 16.5Z" fill="currentColor" fillRule="evenodd" />
                   </svg>
                 </div>
-                <span className="text-slate-900 text-lg font-bold tracking-tight">Trutest Diagnostics</span>
+                <span className="text-slate-900 text-lg font-bold tracking-tight">Quick Care Pathology</span>
               </Link>
               <nav className="hidden lg:flex items-center gap-6">
                 <Link className="text-slate-600 text-sm font-medium hover:text-[#0a6a99] transition-colors" href="/">Home</Link>
@@ -184,7 +184,7 @@ export default function BlogPage() {
         {/* ── FOOTER ── */}
         <footer className="mt-auto border-t border-slate-200 bg-white">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-slate-500">© 2024 Trutest Diagnostics. All rights reserved.</p>
+            <p className="text-sm text-slate-500">© 2026 Quick Care Pathology. All rights reserved.</p>
             <div className="flex gap-6">
               <a className="text-sm text-slate-500 hover:text-[#0a6a99] transition-colors" href="#">Privacy Policy</a>
               <a className="text-sm text-slate-500 hover:text-[#0a6a99] transition-colors" href="#">Terms of Service</a>

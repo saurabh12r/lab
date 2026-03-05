@@ -18,11 +18,11 @@ interface Inquiry {
 }
 
 const DUMMY_ENQUIRIES: Inquiry[] = [
-  { id: "ENQ-2001", name: "James Wilson", phone: "+1 (555) 111-2222", email: "j.wilson@email.com", message: "I would like to know if you offer home collection for blood tests. My father is elderly and cannot travel easily.", inquiryDate: "Oct 28, 2023", status: "New" },
-  { id: "ENQ-2002", name: "Lisa Chen", phone: "+1 (555) 333-4444", email: "lisa.chen@email.com", message: "Could you send me a price list for your corporate wellness packages? We have 50+ employees.", inquiryDate: "Oct 27, 2023", status: "Contacted" },
-  { id: "ENQ-2003", name: "Mark Davis", phone: "+1 (555) 555-6666", email: "mdavis@email.com", message: "What is the turnaround time for a full lipid profile? Need results before my doctor appointment next week.", inquiryDate: "Oct 26, 2023", status: "Resolved" },
-  { id: "ENQ-2004", name: "Anna Brown", phone: "+1 (555) 777-8888", email: "anna.b@email.com", message: "Do you accept insurance for routine checkups? I have Blue Cross.", inquiryDate: "Oct 25, 2023", status: "New" },
-  { id: "ENQ-2005", name: "Tom Harris", phone: "+1 (555) 999-0000", email: "tom.h@email.com", message: "Interested in partnership for lab services. Please have someone from B2B team contact me.", inquiryDate: "Oct 24, 2023", status: "Contacted" },
+  { id: "ENQ-2001", name: "James Wilson", phone: "+1 (555) 111-2222", email: "j.wilson@email.com", message: "I would like to know if you offer home collection for blood tests. My father is elderly and cannot travel easily.", inquiryDate: "Oct 28, 2026", status: "New" },
+  { id: "ENQ-2002", name: "Lisa Chen", phone: "+1 (555) 333-4444", email: "lisa.chen@email.com", message: "Could you send me a price list for your corporate wellness packages? We have 50+ employees.", inquiryDate: "Oct 27, 2026", status: "Contacted" },
+  { id: "ENQ-2003", name: "Mark Davis", phone: "+1 (555) 555-6666", email: "mdavis@email.com", message: "What is the turnaround time for a full lipid profile? Need results before my doctor appointment next week.", inquiryDate: "Oct 26, 2026", status: "Resolved" },
+  { id: "ENQ-2004", name: "Anna Brown", phone: "+1 (555) 777-8888", email: "anna.b@email.com", message: "Do you accept insurance for routine checkups? I have Blue Cross.", inquiryDate: "Oct 25, 2026", status: "New" },
+  { id: "ENQ-2005", name: "Tom Harris", phone: "+1 (555) 999-0000", email: "tom.h@email.com", message: "Interested in partnership for lab services. Please have someone from B2B team contact me.", inquiryDate: "Oct 24, 2026", status: "Contacted" },
 ];
 
 function getStatusStyles(status: InquiryStatus) {

@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Trutest Diagnostics – Advanced Diagnostics You Can Trust",
+  title: "Quick Care Pathology – Advanced Diagnostics You Can Trust",
   description:
     "Book blood tests, full body checkups, and upload prescriptions online. Get accurate reports delivered to your app within 24 hours.",
 };

@@ -18,10 +18,10 @@ interface BlogPost {
 }
 
 const DUMMY_BLOGS: BlogPost[] = [
-  { id: "BLG-001", title: "Understanding Your Blood Test Results", slug: "/understanding-blood-tests", category: "Health Tips", author: "Dr. Sarah Lee", publishDate: "Oct 24, 2023", status: "Published" },
-  { id: "BLG-002", title: "The Importance of Regular Health Checkups", slug: "/regular-health-checkups", category: "Wellness", author: "Dr. James Wilson", publishDate: "Oct 20, 2023", status: "Published" },
-  { id: "BLG-003", title: "New Advanced MRI Technology", slug: "/advanced-mri-technology", category: "News", author: "Dr. Admin", publishDate: "Oct 18, 2023", status: "Draft" },
-  { id: "BLG-004", title: "Diabetes Screening: What to Expect", slug: "/diabetes-screening", category: "Health Tips", author: "Dr. Sarah Lee", publishDate: "Oct 15, 2023", status: "Published" },
+  { id: "BLG-001", title: "Understanding Your Blood Test Results", slug: "/understanding-blood-tests", category: "Health Tips", author: "Dr. Sarah Lee", publishDate: "Oct 24, 2026", status: "Published" },
+  { id: "BLG-002", title: "The Importance of Regular Health Checkups", slug: "/regular-health-checkups", category: "Wellness", author: "Dr. James Wilson", publishDate: "Oct 20, 2026", status: "Published" },
+  { id: "BLG-003", title: "New Advanced MRI Technology", slug: "/advanced-mri-technology", category: "News", author: "Dr. Admin", publishDate: "Oct 18, 2026", status: "Draft" },
+  { id: "BLG-004", title: "Diabetes Screening: What to Expect", slug: "/diabetes-screening", category: "Health Tips", author: "Dr. Sarah Lee", publishDate: "Oct 15, 2026", status: "Published" },
   { id: "BLG-005", title: "Seasonal Flu and Lab Testing", slug: "/seasonal-flu-testing", category: "News", author: "Dr. James Wilson", publishDate: "—", status: "Draft" },
 ];
 

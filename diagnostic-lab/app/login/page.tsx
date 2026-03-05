@@ -72,7 +72,7 @@ export default function LoginPage() {
                                 <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#0a6a99]/10 text-[#0a6a99]">
                                     <span className="material-symbols-outlined text-2xl">medical_services</span>
                                 </div>
-                                <span className="text-lg font-bold tracking-tight text-[#0a6a99]">Trutest Diagnostics</span>
+                                <span className="text-lg font-bold tracking-tight text-[#0a6a99]">Quick Care Pathology</span>
                             </Link>
 
                             <div className="hidden md:flex items-center gap-8">
@@ -286,7 +286,7 @@ export default function LoginPage() {
                 {/* ── FOOTER ── */}
                 <footer className="bg-white border-t border-[#cfdfe8] mt-auto py-8">
                     <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-[#4b809b]">© 2023 Trutest Diagnostics. All rights reserved.</p>
+                        <p className="text-sm text-[#4b809b]">© 2026 Quick Care Pathology. All rights reserved.</p>
                         <div className="flex gap-6">
                             <a className="text-[#4b809b] hover:text-[#0a6a99] transition-colors text-sm" href="#">Help Center</a>
                             <a className="text-[#4b809b] hover:text-[#0a6a99] transition-colors text-sm" href="#">Privacy</a>

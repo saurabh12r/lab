@@ -17,7 +17,7 @@ const DUMMY_PRESCRIPTIONS: Prescription[] = [
   {
     id: "RX-4001",
     patientName: "Alice Smith",
-    uploadedDate: "Oct 28, 2023",
+    uploadedDate: "Oct 28, 2026",
     imageUrl: "https://placehold.co/120x80/e2e8f0/64748b?text=Rx",
     suggestedPackages: ["Full Body Checkup", "Thyroid Profile"],
     status: "Package Suggested",
@@ -25,7 +25,7 @@ const DUMMY_PRESCRIPTIONS: Prescription[] = [
   {
     id: "RX-4002",
     patientName: "Michael Johnson",
-    uploadedDate: "Oct 27, 2023",
+    uploadedDate: "Oct 27, 2026",
     imageUrl: "https://placehold.co/120x80/e2e8f0/64748b?text=Rx",
     suggestedPackages: [],
     status: "Pending Review",
@@ -33,7 +33,7 @@ const DUMMY_PRESCRIPTIONS: Prescription[] = [
   {
     id: "RX-4003",
     patientName: "Sarah Williams",
-    uploadedDate: "Oct 26, 2023",
+    uploadedDate: "Oct 26, 2026",
     imageUrl: "https://placehold.co/120x80/e2e8f0/64748b?text=Rx",
     suggestedPackages: ["Diabetes Screen", "Lipid Profile"],
     status: "Approved",
@@ -41,7 +41,7 @@ const DUMMY_PRESCRIPTIONS: Prescription[] = [
   {
     id: "RX-4004",
     patientName: "David Robinson",
-    uploadedDate: "Oct 25, 2023",
+    uploadedDate: "Oct 25, 2026",
     imageUrl: "https://placehold.co/120x80/e2e8f0/64748b?text=Rx",
     suggestedPackages: ["CBC Panel"],
     status: "Rejected",
@@ -49,7 +49,7 @@ const DUMMY_PRESCRIPTIONS: Prescription[] = [
   {
     id: "RX-4005",
     patientName: "Emma Davis",
-    uploadedDate: "Oct 24, 2023",
+    uploadedDate: "Oct 24, 2026",
     imageUrl: "https://placehold.co/120x80/e2e8f0/64748b?text=Rx",
     suggestedPackages: [],
     status: "Pending Review",

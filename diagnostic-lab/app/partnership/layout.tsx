@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Business Partnership – Trutest Diagnostics",
+  title: "Business Partnership – Quick Care Pathology",
   description: "Partner with us for corporate wellness, bulk testing, and employee health programs.",
 };
 

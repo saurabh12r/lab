@@ -3,8 +3,8 @@ import { AdminHeader } from "@/components/admin/AdminHeader";
 import { AdminSidebar } from "@/components/admin/AdminSidebar";
 
 export const metadata: Metadata = {
-  title: "Admin – Trutest Diagnostics",
-  description: "Admin panel for Trutest Diagnostics.",
+  title: "Admin – Quick Care Pathology",
+  description: "Admin panel for Quick Care Pathology.",
 };
 
 export default function AdminLayout({

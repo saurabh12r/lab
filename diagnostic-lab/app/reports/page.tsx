@@ -297,7 +297,7 @@ export default function ReportsPage() {
                         </div>
 
                         <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
-                            <p>© 2023 Diagnostic Lab. All rights reserved.</p>
+                            <p>© 2026 Diagnostic Lab. All rights reserved.</p>
                             <div className="flex gap-6 mt-4 md:mt-0">
                                 <a className="hover:text-[#0b73a8]" href="#">Privacy</a>
                                 <a className="hover:text-[#0b73a8]" href="#">Terms</a>

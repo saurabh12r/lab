@@ -255,7 +255,7 @@ export default function ReportViewPage() {
                 {/* ── FOOTER ── */}
                 <footer className="mt-auto border-t border-slate-200 bg-white py-6 px-10">
                     <div className="max-w-[1024px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-                        <p>© 2023 Diagnostic Lab. All rights reserved.</p>
+                        <p>© 2026 Diagnostic Lab. All rights reserved.</p>
                         <div className="flex gap-6">
                             <Link className="hover:text-[#0fa5f0] transition-colors" href="/contact">Contact</Link>
                             <a className="hover:text-[#0fa5f0] transition-colors" href="#">Privacy Policy</a>

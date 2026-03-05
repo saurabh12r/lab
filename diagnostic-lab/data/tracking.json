@@ -3,7 +3,7 @@
     "bookingId": "#TRU-88291",
     "patientName": "John Doe",
     "testType": "Full Body Checkup",
-    "estReportDate": "Oct 24, 2023"
+    "estReportDate": "Oct 24, 2026"
   },
   "timeline": [
     { "id": "1", "icon": "check_circle", "title": "Booking Confirmed", "time": "Oct 21, 10:00 AM", "description": "Your appointment has been successfully scheduled.", "status": "done" },
